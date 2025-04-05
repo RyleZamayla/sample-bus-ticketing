@@ -3,6 +3,7 @@
 namespace App\Models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
+use Illuminate\Database\Eloquent\SoftDeletes;
 use Illuminate\Database\Eloquent\Model;
 
 class Dispatcher extends Model
@@ -15,9 +16,9 @@ class Dispatcher extends Model
         'terminal_id',
         'fname', 
         'mname', 
-        'lname',
-        'suffix',  
+        'lname', 
         'gender',
+        'suffix',
         'phone',
         'address',
         'email',
@@ -30,9 +31,9 @@ class Dispatcher extends Model
         'deleted_at',
     ];
 
-    public function terminal()
-    {
-        return $this->belongsTo(Terminal::class, 'terminal_id');
-    }
+    // public function terminal()
+    // {
+    //     return $this->belongsTo(Terminal::class, 'terminal_id');
+    // }
 
 }

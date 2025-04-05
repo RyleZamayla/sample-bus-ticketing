@@ -13,7 +13,7 @@ return new class extends Migration
     {
         Schema::create('dispatchers', function (Blueprint $table) {
             $table->id();
-            $table->bigInteger('terminal_id')->unsigned();
+            $table->bigInteger('terminal_id')->unsigned()->nullable();
             $table->string('fname');
             $table->string('mname');
             $table->string('lname');
