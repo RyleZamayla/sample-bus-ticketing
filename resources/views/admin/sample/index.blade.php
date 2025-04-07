@@ -1,14 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Dispatcher View</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://cdn.jsdelivr.net/npm/@mdi/font/css/materialdesignicons.min.css" rel="stylesheet">
-</head>
-<body class="bg-gray-100">
+<x-app-layout>
     <div class="container mx-auto mt-10">
         <h1 class="text-center text-3xl font-bold mb-6">Hello, World!</h1>
         <p class="text-center text-gray-600">Welcome to the sample Laravel application.</p>
@@ -73,5 +63,4 @@
             <p class="text-center text-gray-500">No dispatchers found.</p>
         @endif
     </div>
-</body>
-</html>
+</x-app-layout>

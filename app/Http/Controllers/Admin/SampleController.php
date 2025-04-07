@@ -10,6 +10,7 @@ class SampleController extends Controller
 {
     public function index()
     {
+        \Log::info('Index method accessed');
         $data = Dispatcher::all();
 
         return view('admin.sample.index', compact('data'));
