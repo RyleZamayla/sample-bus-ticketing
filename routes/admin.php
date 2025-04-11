@@ -1,6 +1,7 @@
 <?php
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Admin\SampleController;
+use App\Http\Controllers\Admin\Dashboard;
 
 /*
 |--------------------------------------------------------------------------
@@ -11,6 +12,8 @@ use App\Http\Controllers\Admin\SampleController;
 | These routes are loaded by the RouteServiceProvider and all of them will
 | be assigned to the "web" middleware group. ~ Wawaaaa!
 */
+
+Route::get('/dashboard', [Dashboard::class, 'index'])->name('admin.dashboard');
 
 Route::get('/get-dispatchers', [SampleController::class, 'index'])->name('admin.get-dispatchers');
 Route::get('/create-dispatcher', [SampleController::class, 'create'])->name('admin.create-dispatchers');
